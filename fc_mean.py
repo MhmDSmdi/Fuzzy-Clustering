@@ -34,12 +34,7 @@ def point_generator():
     return x1
 
 
-X = point_generator()
-U = np.random.uniform(0, 1, (DATA_POINT_SIZE, NUM_CLUSTER))
-U = U / U.sum(axis=1, keepdims=1)
-
-
-def calculate_c_center():
+def calculate_c_center(U, X):
     cluster_centers = np.zeros((FEATURE_SIZE, NUM_CLUSTER))
     for j in range(NUM_CLUSTER):
         numerate = denumerate = 0
@@ -51,16 +46,16 @@ def calculate_c_center():
     return cluster_centers
 
 
-def update_membership_value(cluster_centers):
+def update_membership_value(X, cluster_centers):
     newU = np.zeros((DATA_POINT_SIZE, NUM_CLUSTER))
     for i in range(DATA_POINT_SIZE):
         for j in range(NUM_CLUSTER):
-            numerate = destination(X[:, i], cluster_centers[:, j]) ** (-2 * (FUZZINESS_PARAMETER - 1))
-            denumerate = 0
+            numerate = destination(X[:, i], cluster_centers[:, j]) ** (2 / (1 - FUZZINESS_PARAMETER))
+            denominator = 0
             for k in range(NUM_CLUSTER):
-                denumerate = denumerate + destination(X[:, i], cluster_centers[:, k]) ** (-2 * (FUZZINESS_PARAMETER - 1))
-
-            newU[i, j] = numerate / denumerate
+                denominator = denominator + destination(X[:, i], cluster_centers[:, k]) ** (
+                            2 / (1 - FUZZINESS_PARAMETER))
+            newU[i, j] = numerate / denominator
     return newU
 
 
@@ -69,17 +64,20 @@ def destination(xk, vi):
 
 
 def fcmean(num_iteration=100):
+    X = point_generator()
+    U = np.random.uniform(0, 1, (DATA_POINT_SIZE, NUM_CLUSTER))
+    U = U / U.sum(axis=0, keepdims=1)
     cluster_centers = None
     while num_iteration > 0:
         num_iteration -= 1
-        cluster_centers = calculate_c_center()
-        U = update_membership_value(cluster_centers)
+        cluster_centers = calculate_c_center(U, X)
+        U = update_membership_value(X, cluster_centers)
     label = np.argmax(U, axis=1)
     print(label)
-    show_result(cluster_centers)
+    show_result(X, cluster_centers)
 
 
-def show_result(cluster_centers):
+def show_result(X, cluster_centers):
     x_data = X[0, :]
     y_data = X[1, :]
     x_centroid = cluster_centers[0, :]
