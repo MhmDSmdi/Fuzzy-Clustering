@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612c6082-dfdc-46cb-971e-b8331b0f9331" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_mean.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_mean.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_mean.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,19 +13,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FuzzyClustering$fc_mean.coverage" NAME="fc_mean Coverage Results" MODIFIED="1556644316305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FuzzyClustering$fc_mean.coverage" NAME="fc_mean Coverage Results" MODIFIED="1556651109450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FuzzyClustering$c_mean.coverage" NAME="c_mean Coverage Results" MODIFIED="1556563318152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-84497871">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4060" />
+          <entry key="py" value="4290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4060" />
+          <entry key="Python" value="4290" />
         </counts>
       </usages-collector>
     </session>
@@ -54,25 +56,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fc_mean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="89" column="66" selection-start-line="89" selection-start-column="66" selection-end-line="89" selection-end-column="66" />
+            <state relative-caret-position="180">
+              <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1556644335315" expanded="true" signature="832:837" ph="..." />
-                <marker date="1556644335315" expanded="true" signature="1728:1731" ph="..." />
-                <marker date="1556644335315" expanded="true" signature="1755:1756" ph="..." />
-                <marker date="1556644335315" expanded="true" signature="1755:1760" ph="..." />
-                <marker date="1556644335315" expanded="true" signature="2000:2005" ph="..." />
+                <marker date="1556651108732" expanded="true" signature="693:698" ph="..." />
+                <marker date="1556651108732" expanded="true" signature="1612:1615" ph="..." />
+                <marker date="1556651108732" expanded="true" signature="1639:1640" ph="..." />
+                <marker date="1556651108732" expanded="true" signature="1639:1644" ph="..." />
+                <marker date="1556651108732" expanded="true" signature="1910:1915" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c_mean.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -227,13 +220,12 @@
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12593383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12700106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.08" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22810811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -244,6 +236,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32756758" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,21 +261,21 @@
     <entry file="file://$PROJECT_DIR$/c_mean.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fc_mean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="89" column="66" selection-start-line="89" selection-start-column="66" selection-end-line="89" selection-end-column="66" />
+        <state relative-caret-position="180">
+          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1556644335315" expanded="true" signature="832:837" ph="..." />
-            <marker date="1556644335315" expanded="true" signature="1728:1731" ph="..." />
-            <marker date="1556644335315" expanded="true" signature="1755:1756" ph="..." />
-            <marker date="1556644335315" expanded="true" signature="1755:1760" ph="..." />
-            <marker date="1556644335315" expanded="true" signature="2000:2005" ph="..." />
+            <marker date="1556651108732" expanded="true" signature="693:698" ph="..." />
+            <marker date="1556651108732" expanded="true" signature="1612:1615" ph="..." />
+            <marker date="1556651108732" expanded="true" signature="1639:1640" ph="..." />
+            <marker date="1556651108732" expanded="true" signature="1639:1644" ph="..." />
+            <marker date="1556651108732" expanded="true" signature="1910:1915" ph="..." />
           </folding>
         </state>
       </provider>

@@ -2,34 +2,27 @@ import numpy as np
 from matplotlib import pyplot as plt
 import matplotlib as mpl
 
-NUM_CLUSTER = 4
 FUZZINESS_PARAMETER = 2.00
-FEATURE_SIZE = 2
-DATA_POINT_SIZE = 1000
 
 
-def point_generator():
-    x1 = np.random.uniform(0, 1, (FEATURE_SIZE, DATA_POINT_SIZE / 4))
-    x1 = x1 * 250 + 10
-    x2 = np.random.uniform(0, 1, (FEATURE_SIZE, DATA_POINT_SIZE / 4))
-    x2 = x2 * 250 - 10
-    x3 = np.random.uniform(0, 1, (FEATURE_SIZE, DATA_POINT_SIZE / 4))
-    x3 = x3 * -250 + 10
-    x3[1:, ] = x3[1:, ] * -1
-    x4 = np.random.uniform(0, 1, (FEATURE_SIZE, DATA_POINT_SIZE / 4))
-    x4 = x4 * -250 - 10
-    x4[1:, ] = x4[1:, ] * -1
+def point_generator(feature_size, num_data):
+    x1 = np.random.uniform(0, 40, (feature_size, num_data / 2))
+    x2 = np.random.uniform(-40, 0, (feature_size, num_data / 2))
+    # x3 = np.random.uniform(-40, 40, (feature_size, num_data / 2))
+    # x3[1:, ] = x3[1:, ] * -1
+    # x4 = np.random.uniform(-40, 0, (feature_size, num_data / 4))
+    # x4[1:, ] = x4[1:, ] * -1
     x1 = np.append(x1, x2, axis=1)
-    x2 = np.append(x3, x4, axis=1)
-    x1 = np.append(x1, x2, axis=1)
+    # x2 = np.append(x3, x4, axis=1)
+    # x1 = np.append(x1, x3, axis=1)
     return x1
 
 
 def calculate_c_center(U, X):
-    cluster_centers = np.zeros((FEATURE_SIZE, NUM_CLUSTER))
-    for j in range(NUM_CLUSTER):
+    cluster_centers = np.zeros((X.shape[0], U.shape[1]))
+    for j in range(U.shape[1]):
         numerate = denumerate = 0
-        for i in range(DATA_POINT_SIZE):
+        for i in range(X.shape[1]):
             numerate = numerate + (U[i, j] ** FUZZINESS_PARAMETER) * X[:, i]
             denumerate = denumerate + U[i, j] ** FUZZINESS_PARAMETER
         cluster_centers[:, j] = numerate / denumerate
@@ -38,12 +31,12 @@ def calculate_c_center(U, X):
 
 
 def update_membership_value(X, cluster_centers):
-    newU = np.zeros((DATA_POINT_SIZE, NUM_CLUSTER))
-    for i in range(DATA_POINT_SIZE):
-        for j in range(NUM_CLUSTER):
+    newU = np.zeros((X.shape[1], cluster_centers.shape[1]))
+    for i in range(X.shape[1]):
+        for j in range(cluster_centers.shape[1]):
             numerate = destination(X[:, i], cluster_centers[:, j]) ** (2 / (1 - FUZZINESS_PARAMETER))
             denominator = 0
-            for k in range(NUM_CLUSTER):
+            for k in range(cluster_centers.shape[1]):
                 denominator = denominator + destination(X[:, i], cluster_centers[:, k]) ** (
                         2 / (1 - FUZZINESS_PARAMETER))
             newU[i, j] = numerate / denominator
@@ -54,9 +47,9 @@ def destination(xk, vi):
     return np.linalg.norm(xk - vi)
 
 
-def fcmean(num_iteration=100):
-    X = point_generator()
-    U = np.random.uniform(0, 1, (DATA_POINT_SIZE, NUM_CLUSTER))
+def fcmean(data, num_clusters=2, num_iteration=100):
+    X = point_generator(2, 10000)
+    U = np.random.uniform(0, 1, (X.shape[1], num_clusters))
     U = U / U.sum(axis=0, keepdims=1)
     cluster_centers = None
     i = num_iteration
@@ -74,11 +67,11 @@ def show_result(X, labels, cluster_centers, num_iteration):
     y_data = X[1, :]
     x_centroid = cluster_centers[0, :]
     y_centroid = cluster_centers[1, :]
-    txt = "NumCluster = {}, NumIteration = {}, NumData = {}, FuzzyParameter = {}".format(NUM_CLUSTER, num_iteration, DATA_POINT_SIZE, FUZZINESS_PARAMETER)
+    txt = "(Cluster = {}, Iteration = {}, Data = {}, FuzzyParameter = {})".format(cluster_centers.shape[1], num_iteration, X.shape[1], FUZZINESS_PARAMETER)
     cmap = plt.cm.jet
     cmaplist = [cmap(i) for i in range(cmap.N)]
     cmap = cmap.from_list('Custom cmap', cmaplist, cmap.N)
-    bounds = np.linspace(0, NUM_CLUSTER, NUM_CLUSTER + 1)
+    bounds = np.linspace(0, cluster_centers.shape[1], cluster_centers.shape[1] + 1)
     norm = mpl.colors.BoundaryNorm(bounds, cmap.N)
     fig, ax = plt.subplots(1, 1, figsize=(10, 10))
     scat = ax.scatter(x_data, y_data, s=30, c=labels, cmap=cmap, norm=norm)
