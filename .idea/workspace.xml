@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612c6082-dfdc-46cb-971e-b8331b0f9331" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_mean.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_mean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output7.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,20 +12,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FuzzyClustering$fc_mean.coverage" NAME="fc_mean Coverage Results" MODIFIED="1556710068025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FuzzyClustering$fc_mean.coverage" NAME="fc_mean Coverage Results" MODIFIED="1556711783477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FuzzyClustering$c_mean.coverage" NAME="c_mean Coverage Results" MODIFIED="1556563318152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-84497871">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,12 +42,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5961" />
+          <entry key="py" value="6041" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5961" />
+          <entry key="Python" value="6041" />
         </counts>
       </usages-collector>
     </session>
@@ -65,16 +57,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fc_mean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="216">
+              <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1556710065364" expanded="true" signature="1232:1237" ph="..." />
-                <marker date="1556710065364" expanded="true" signature="2151:2154" ph="..." />
-                <marker date="1556710065364" expanded="true" signature="2178:2179" ph="..." />
-                <marker date="1556710065364" expanded="true" signature="2178:2183" ph="..." />
-                <marker date="1556710065364" expanded="true" signature="2415:2420" ph="..." />
-                <marker date="1556710065364" expanded="true" signature="2793:2795" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="756:761" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="1675:1678" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="1702:1703" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="1702:1707" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="1933:1938" ph="..." />
+                <marker date="1556711812740" expanded="true" signature="2318:2320" ph="..." />
               </folding>
             </state>
           </provider>
@@ -125,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,6 +128,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,14 +221,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1280683" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12913553" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22810811" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22810811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,13 +236,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32686085" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3264865" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32972974" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.33244398" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.33511207" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -270,18 +261,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c_mean.py" />
-    <entry file="file://$PROJECT_DIR$/output4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output4.png" />
+    <entry file="file://$PROJECT_DIR$/output6.png" />
+    <entry file="file://$PROJECT_DIR$/output5.png" />
+    <entry file="file://$PROJECT_DIR$/output3.png" />
     <entry file="file://$PROJECT_DIR$/1-out.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -310,18 +293,10 @@
     <entry file="file://$PROJECT_DIR$/10-out.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/in_iter_in.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in_iter_10.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in_iter_100.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in_iter_5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/in_iter_in.png" />
+    <entry file="file://$PROJECT_DIR$/in_iter_10.png" />
+    <entry file="file://$PROJECT_DIR$/in_iter_100.png" />
+    <entry file="file://$PROJECT_DIR$/in_iter_5.png" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/matplotlib/cm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -345,16 +320,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fc_mean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="216">
+          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1556710065364" expanded="true" signature="1232:1237" ph="..." />
-            <marker date="1556710065364" expanded="true" signature="2151:2154" ph="..." />
-            <marker date="1556710065364" expanded="true" signature="2178:2179" ph="..." />
-            <marker date="1556710065364" expanded="true" signature="2178:2183" ph="..." />
-            <marker date="1556710065364" expanded="true" signature="2415:2420" ph="..." />
-            <marker date="1556710065364" expanded="true" signature="2793:2795" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="756:761" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="1675:1678" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="1702:1703" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="1702:1707" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="1933:1938" ph="..." />
+            <marker date="1556711812740" expanded="true" signature="2318:2320" ph="..." />
           </folding>
         </state>
       </provider>
